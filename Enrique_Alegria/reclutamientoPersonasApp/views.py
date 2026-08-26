@@ -38,7 +38,7 @@ def clientes(request):
             'categoria10':'',
             'desc10':'',
         }
-    return render(request,'clientes.html',{})
+    return render(request,'clientes.html', data)
 
 def egresados(request):
     data = {
@@ -68,7 +68,7 @@ def egresados(request):
             'categoria8':'',
             'desc8':'',
         }
-    return render(request,'egresados.html', {})
+    return render(request,'egresados.html', data)
 
 def personal(request):
     data = {
@@ -89,4 +89,4 @@ def personal(request):
         'categoria5':'',
         'desc5':'',
     }
-    return render(request, 'personal.html', {})
+    return render(request, 'personal.html', data)

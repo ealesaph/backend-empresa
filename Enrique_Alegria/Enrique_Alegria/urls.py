@@ -20,5 +20,8 @@ from reclutamientoPersonasApp import views as vw
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',vw.index, name='index')
+    path('',vw.index, name='index'),
+    path('personal/',vw.personal,name='personal'),
+    path('egresados/',vw.egresados,name='egresados'),
+    path('clientes/',vw.clientes,name='clientes'),
 ]
