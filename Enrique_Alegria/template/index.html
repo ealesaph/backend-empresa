@@ -12,10 +12,10 @@
 <header>
 
 <nav class="nav nav-pills flex-column flex-sm-row">
-  <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="#">Inicio</a>
-  <a class="flex-sm-fill text-sm-center nav-link" href="#">Personal</a>
-  <a class="flex-sm-fill text-sm-center nav-link" href="#">Clientes</a>
-  <a class="flex-sm-fill text-sm-center nav-link" href="#">Egresados</a>
+  <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="{% url 'index' %}">Inicio</a>
+  <a class="flex-sm-fill text-sm-center nav-link" href="{% url 'personal' %}">Personal</a>
+  <a class="flex-sm-fill text-sm-center nav-link" href="{% url 'clientes' %}">Clientes</a>
+  <a class="flex-sm-fill text-sm-center nav-link" href="{% url 'egresados' %}">Egresados</a>
 </nav>
 
 </header>
