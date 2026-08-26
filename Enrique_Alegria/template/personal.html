@@ -11,14 +11,36 @@
 </head>
 <header>
 
-<nav class="nav nav-pills flex-column flex-sm-row">
-  <a class="flex-sm-fill text-sm-center nav-link" href="{% url 'index' %}">Inicio</a>
-  <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="{% url 'personal' %}">Personal</a>
-  <a class="flex-sm-fill text-sm-center nav-link" href="{% url 'clientes' %}">Clientes</a>
-  <a class="flex-sm-fill text-sm-center nav-link" href="{% url 'egresados' %}">Egresados</a>
-</nav>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col">
+                1 of 2 logo (index)
+            </div>
+            <div class="col">
+                2 of 2 nombre
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <nav class="nav nav-pills flex-column flex-sm-row">
+                    <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="{% url 'personal' %}">Personal</a>
+                </nav>
+            </div>
+            <div class="col">
+                <nav class="nav nav-pills flex-column flex-sm-row">
+                    <a class="flex-sm-fill text-sm-center nav-link" href="{% url 'clientes' %}">Clientes</a>
+                </nav>
+            </div>
+            <div class="col">
+                <nav class="nav nav-pills flex-column flex-sm-row">
+                    <a class="flex-sm-fill text-sm-center nav-link" href="{% url 'egresados' %}">Egresados</a>
+                </nav>
+            </div>
+        </div>
+    </div>
 
 </header>
+
 <body>
     <div>
         <div></div>

@@ -1,26 +1,71 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Empresa de Reclutamiento</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 
 </head>
 <header>
 
-<nav class="nav nav-pills flex-column flex-sm-row">
-  <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="{% url 'index' %}">Inicio</a>
-  <a class="flex-sm-fill text-sm-center nav-link" href="{% url 'personal' %}">Personal</a>
-  <a class="flex-sm-fill text-sm-center nav-link" href="{% url 'clientes' %}">Clientes</a>
-  <a class="flex-sm-fill text-sm-center nav-link" href="{% url 'egresados' %}">Egresados</a>
-</nav>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col">
+                <a href="{% url 'index' %}">
+                    <img src="{% static 'img/index/Logo-demo.png' %}" alt="logo">
+                </a>
+            </div>
+            <div class="col">
+                2 of 2 nombre
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <nav class="nav nav-pills flex-column flex-sm-row">
+                    <a class="flex-sm-fill text-sm-center nav-link" href="{% url 'personal' %}">Personal</a>
+                </nav>
+            </div>
+            <div class="col">
+                <nav class="nav nav-pills flex-column flex-sm-row">
+                    <a class="flex-sm-fill text-sm-center nav-link" href="{% url 'clientes' %}">Clientes</a>
+                </nav>
+            </div>
+            <div class="col">
+                <nav class="nav nav-pills flex-column flex-sm-row">
+                    <a class="flex-sm-fill text-sm-center nav-link" href="{% url 'egresados' %}">Egresados</a>
+                </nav>
+            </div>
+        </div>
+    </div>
 
 </header>
+
 <body>
-    <div>
+    <div class="container-fluid">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est impedit quaerat quidem necessitatibus id facere
+            inventore odit harum autem repudiandae doloribus esse dignissimos, minima nemo ipsum vitae architecto
+            dolorum velit?
+            Accusamus nemo nobis rem modi labore! Dolore animi voluptas perspiciatis iure omnis dignissimos commodi
+            quisquam! Assumenda nihil fugit iure consequuntur vel quae quam error, molestias, unde doloremque, sunt
+            aliquam facilis!
+            Autem maiores earum id eligendi distinctio itaque quis rem ducimus reiciendis! Esse, maxime. Beatae,
+            possimus. Cumque error minus quos ullam nam nobis consectetur, unde assumenda, autem animi delectus omnis
+            saepe.
+            Tempora deserunt id et amet a beatae distinctio aspernatur eligendi culpa quod, itaque voluptates nobis
+            voluptatem aliquid maxime repellat laborum, mollitia nesciunt natus! Placeat beatae qui, voluptatum corrupti
+            aspernatur incidunt?
+            Nulla sequi architecto quo sed, quidem porro reprehenderit nihil assumenda non a! Sapiente alias, autem
+            eligendi quaerat repudiandae ipsa rem? Doloremque ex earum consequatur labore officia cupiditate expedita
+            officiis minus.</p>
         <div></div>
         <div></div>
         <div></div>
@@ -28,6 +73,7 @@
 </body>
 
 <footer>
-    
+
 </footer>
+
 </html>
