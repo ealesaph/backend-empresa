@@ -6,7 +6,7 @@ def index(request):
 
 def clientes(request):
     data = {
-            'titulo':'Egresados',
+            'titulo':'Clientes',
             'nombre1': 'Leandro de Miguel',
             'categoria1':'Diseñador/a gráfico/a',
             'desc1':'Excelente experiencia, todo salió perfecto. Muy recomendable.',
@@ -25,7 +25,7 @@ def clientes(request):
             
             'nombre5':'Denis Freire',
             'categoria5':'Fotógrafo/a',
-            'desc5':'Una experiencia agradable de principio a fin. El trato fue excelente y todo funcionó como esperaba.',
+            'desc5':'Una experiencia agradable de principio a fin. El trato fue excelente y todo funcionó como esperaba.','static/img/clientes/cliente1.png'
 
             'nombre6':'Luz-Maria Mariño',
             'categoria6':'Chef',
@@ -89,24 +89,10 @@ def egresados(request):
 def personal(request):
     data = {
         'titulo':'Personal',
-        'nombre1': '',
-        'categoria1':'',
-        'desc1':'',
 
-        'nombre2': '',
-        'categoria2':'',
-        'desc2':'',
-
-        'nombre3': '',
-        'categoria3':'',
-        'desc3':'',
-
-        'nombre4':'',
-        'categoria4':'',
-        'desc4':'',
+        'nombre': ['Epifanio Oliva','Leonel Mijangos','Adelaida Yam','Hector Barajas','Isidora Valle'],
+        'cargo' : ['Chofer', 'Vendedo', 'Reponedor', 'Técnico de Mantención', 'Cajera'],
+        'desc' : [],
         
-        'nombre5':'',
-        'categoria5':'',
-        'desc5':'',
     }
     return render(request, 'personal.html', data)

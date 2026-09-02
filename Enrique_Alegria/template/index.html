@@ -1,94 +1,29 @@
+{% extends './layout/base.html' %}
+
 {% load static %}
 
-<!DOCTYPE html>
-<html lang="es">
+{% block titulo %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Empresa de Reclutamiento</title>
+    {{ titulo }}
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+{% endblock %}
 
-</head>
-<header>
+{% block estilos %}
+<link rel="stylesheet" href="{% static 'style/index_style.css} %">
+{% endblock %}
 
-    <div class="container text-center">
-        <div class="row">
-            <div class="col">
-                <a href="{% url 'index' %}">
-                    <img src="{% static 'img/index/Logo-demo.png' %}" alt="logo">
-                </a>
-            </div>
-            <div class="col-center">
-                <h1>LOREM IPSUM CORP</h1>
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col">
-                <nav class="nav nav-pills flex-column flex-sm-row">
-                    <a class="flex-sm-fill text-sm-center nav-link" href="{% url 'personal' %}">Personal</a>
-                </nav>
-            </div>
-            <div class="col">
-                <nav class="nav nav-pills flex-column flex-sm-row">
-                    <a class="flex-sm-fill text-sm-center nav-link" href="{% url 'clientes' %}">Clientes</a>
-                </nav>
-            </div>
-            <div class="col">
-                <nav class="nav nav-pills flex-column flex-sm-row">
-                    <a class="flex-sm-fill text-sm-center nav-link" href="{% url 'egresados' %}">Egresados</a>
-                </nav>
-            </div>
-        </div>
+{% block content %}
+<div>
+    <div class="col">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque odio mollitia dolores debitis officiis
+            repudiandae adipisci, alias sapiente non veritatis quidem pariatur facilis itaque odit aperiam at? Fugiat,
+            id. Fugiat!
+            Rem neque assumenda animi vel. Tempore voluptatibus eligendi aperiam accusantium delectus, odio quibusdam
+            vero veritatis earum aspernatur, sequi dolore! Reprehenderit, amet corrupti aspernatur suscipit aliquam
+            dicta magni dolorum fugiat quibusdam?
+            Quibusdam dicta quidem cumque. Maiores, asperiores unde consequatur ad ducimus expedita aperiam, eaque
+            voluptatum quos sapiente vero. Possimus odio natus ducimus officia quas iusto, perspiciatis itaque fuga
+            aliquam voluptatem a?</p>
     </div>
-
-</header>
-
-<body>
-    <div class="container-fluid">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est impedit quaerat quidem necessitatibus id facere
-            inventore odit harum autem repudiandae doloribus esse dignissimos, minima nemo ipsum vitae architecto
-            dolorum velit?
-            Accusamus nemo nobis rem modi labore! Dolore animi voluptas perspiciatis iure omnis dignissimos commodi
-            quisquam! Assumenda nihil fugit iure consequuntur vel quae quam error, molestias, unde doloremque, sunt
-            aliquam facilis!
-            Autem maiores earum id eligendi distinctio itaque quis rem ducimus reiciendis! Esse, maxime. Beatae,
-            possimus. Cumque error minus quos ullam nam nobis consectetur, unde assumenda, autem animi delectus omnis
-            saepe.
-            Tempora deserunt id et amet a beatae distinctio aspernatur eligendi culpa quod, itaque voluptates nobis
-            voluptatem aliquid maxime repellat laborum, mollitia nesciunt natus! Placeat beatae qui, voluptatum corrupti
-            aspernatur incidunt?
-            Nulla sequi architecto quo sed, quidem porro reprehenderit nihil assumenda non a! Sapiente alias, autem
-            eligendi quaerat repudiandae ipsa rem? Doloremque ex earum consequatur labore officia cupiditate expedita
-            officiis minus.</p>
-        <div></div>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus veniam deleniti consequuntur culpa ipsam veritatis odit officiis quidem nemo non! Consequatur nemo quasi provident eligendi ad tempora nihil neque minima?
-            Debitis facere molestiae, minus eius perferendis saepe cumque nisi fuga quam voluptates itaque doloremque voluptate veniam recusandae numquam voluptas reprehenderit tempore maxime quia. Quaerat laboriosam voluptates deleniti modi excepturi consequuntur!
-            Corrupti laboriosam voluptates quaerat delectus quisquam numquam quod repellendus vero animi quae dolores est optio deleniti eos maiores sequi, nam quidem blanditiis voluptas. Reprehenderit consequuntur minus, neque quisquam magnam sequi.
-            Iure recusandae magnam ad quaerat enim, natus provident eaque id velit, aperiam iusto quisquam cupiditate. Impedit at, voluptas sint recusandae exercitationem praesentium quo eligendi officiis laudantium ad. Dolor, ab eius?
-            Quam maiores eaque numquam beatae! Voluptates aperiam maiores suscipit hic voluptatum delectus tempore odit ut vero! Culpa, placeat laboriosam possimus veritatis, delectus quod tenetur voluptatem aut optio neque maiores asperiores!
-            Veritatis laudantium, nostrum quibusdam, culpa fuga numquam saepe reprehenderit deserunt sed totam optio? Culpa saepe, iusto cupiditate nihil eum modi eaque totam molestiae, tempore fuga at incidunt, maiores ipsa repudiandae?
-            Inventore quis porro suscipit! Id accusantium nam accusamus explicabo veritatis. Iste modi temporibus pariatur voluptatem, nam officia quos ab repellat error, distinctio nihil nostrum magni aperiam, eos voluptas dignissimos aliquid!
-            Ab ex est iure blanditiis enim aliquam perferendis vel voluptates, dolorem officia non molestiae temporibus eum accusantium nesciunt totam facilis sed aperiam recusandae corporis fugit aspernatur. Deserunt aliquam magni cum?
-            Enim natus sit quaerat amet culpa iusto fugiat blanditiis, consequatur, maxime beatae necessitatibus quos illo. Vitae, esse excepturi quos enim vel iste quia facilis voluptatibus atque explicabo ullam quod at!
-        </p>
-        <div></div>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, atque exercitationem rerum rem ipsum quod accusantium aspernatur neque mollitia soluta? Neque adipisci aliquid voluptatum ab. Necessitatibus id eveniet sequi consectetur?
-        </p>
-        <div></div>
-    </div>
-</body>
-
-<footer>
-
-</footer>
-
-</html>
+</div>
+{% endblock %}
